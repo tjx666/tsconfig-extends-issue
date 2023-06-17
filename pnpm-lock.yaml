@@ -1,0 +1,41 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@types/node':
+    specifier: ^20.3.1
+    version: 20.3.1
+  '@yutengjing/tsconfig-node':
+    specifier: ^0.0.2
+    version: 0.0.2(@types/node@20.3.1)
+  typescript:
+    specifier: 5.2.0-dev.20230617
+    version: 5.2.0-dev.20230617
+
+packages:
+
+  /@types/node@20.3.1:
+    resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
+    dev: true
+
+  /@yutengjing/tsconfig-base@0.0.2:
+    resolution: {integrity: sha512-SKNZiEAYvr2TEgRhnWGUMZeTFqOAxulFcQQdH975S35fUfihlRErzbh2Rmi7qoShN2Wlw+PFrwOwNT5j6VdKXg==}
+    dev: true
+
+  /@yutengjing/tsconfig-node@0.0.2(@types/node@20.3.1):
+    resolution: {integrity: sha512-BDTYZVdz4sAb4FZsmAJUTWJMrpVXmvz1emVs4yqUPmE/9JEGwE6DnvtakHSKW4hXxHM5T8xIZItmhWto4jm2+g==}
+    peerDependencies:
+      '@types/node': ^18.16.18
+    dependencies:
+      '@types/node': 20.3.1
+      '@yutengjing/tsconfig-base': 0.0.2
+    dev: true
+
+  /typescript@5.2.0-dev.20230617:
+    resolution: {integrity: sha512-+h4AOo0iCEIvT4MHNeTlZD+pmv7CW3/0zz1eZgY6AnatF/jvkBRaHa6ow+xHNHnRE7VJcBYDPdJQTOBqBkjVjw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
